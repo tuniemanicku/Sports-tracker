@@ -1,22 +1,25 @@
-import './App.css';
-import gamepad from './gamepad.png';
-import football from './football.png';
+import React from 'react';
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
+import Home from "./home/Home";
+import GameSection from "./game-section/GameSection";
+import League from "./league/League";
+import Login from "./login/Login";
+import Profile from "./profile/Profile";
 
 function App() {
-  return (
-    <div className="game_section">
-      <div className="navigation">
-        <div className="button">sign up</div>
-        <div className="button">log in</div>
-        <div className="gamepad"><a href="https://lolesports.com/live/msi/riotgames" target="blank_"><img src={gamepad} alt="games"/></a></div>
-        <div className="football"><a href="https://wp.pl" target="blank_"><img src={football} alt="sports"/></a></div>
-      </div>
-      <div className="page">
-        <input type="text"/>
-        <div className="matches"></div>
-      </div>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/game-section" component={GameSection}/>
+                <Route exact path="/league" component={League}/>
+                <Route exact path="/login">
+                    {localStorage.getItem("token") ? <Redirect to={"/profile"}/> : <Login/>}/></Route>
+                <Route exact path="/profile">
+                    {localStorage.getItem("token") ? <Profile/> : <Redirect to={"/login"}/>}/></Route>
+            </Switch>
+        </BrowserRouter>
+    )
 }
 
 export default App;
