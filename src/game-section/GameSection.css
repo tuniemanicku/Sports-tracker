@@ -1,1 +1,167 @@
+.gameSection .navigation {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #41B883;
+    color: white;
+    border-bottom: solid 2px white;
+}
 
+.gameSection .navNickname {
+    margin-left: 5px;
+    border: solid white 2px;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.gameSection .Logo {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.gameSection .gamepad:hover {
+    background-color: #2d9e6b;
+}
+
+.gameSection .gamepad {
+    width: 50px;
+    padding-top: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.gameSection .football {
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-right: 20px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+}
+
+.gameSection .football:hover {
+    background-color: #2d9e6b;
+}
+
+.gameSection .navigation img {
+    height: 40px;
+    font-size: 0px;
+}
+
+.gameSection .button {
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(41, 14, 192);
+}
+
+.gameSection .button:hover {
+    border: 2px solid rgb(37, 84, 236);
+    cursor: pointer;
+}
+
+.gameSection img {
+    height: 40px;
+    font-size: 0px;
+}
+
+.gameSection a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gameSection {
+    background-image: url(https://static3.thegamerimages.com/wordpress/wp-content/uploads/2019/08/esports-stadium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameSection .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.gameSection .page {
+    text-align: center;
+}
+
+.gameSection h1 {
+    color: white;
+    text-align: center;
+}
+
+.gameSection .gameSelection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.gameSection .gameButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 20vw;
+    min-width: 155px;
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(97, 97, 97);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.gameSection .gameButton:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+.gameSection input {
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.gameSection .matches {
+    padding-bottom: 10px;
+}
+
+.gameSection .match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.gameSection .text {
+    margin-left: 5px;
+}
